@@ -66,6 +66,7 @@ mark {
 input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
+	display: none;
 }
 
 input, select, textarea {
@@ -142,13 +143,15 @@ input, select, textarea {
 
 		}
 
-	body, input, select, textarea {
+	body, input select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
 	}
+	 
+	
 
 	a {
 		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -237,7 +240,7 @@ input, select, textarea {
 		}
 
 		h2 {
-			font-size: 1.25em;
+			font-size: 1em;
 			line-height: 1.5;
 		}
 
@@ -703,9 +706,127 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.main img {
-				width: 100%;
-			}
+		.image.main img {
+			width: 100%;
+			transition-duration: 2s;
+		}
+		
+		.zoom, .zoom:hover{
+			cursor:zoom-in;
+		}
+
+		#click-check:checked + .zoom{
+			transform: scale(1.7);
+			z-index: 100;
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+
+		#click-check + .zoom{
+			transform: scale(1);
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+
+		#click-check1:checked + .zoom{
+			transform: scale(1.7);
+			z-index: 100;
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+		
+		#click-check1 + .zoom{
+			transform: scale(1);
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+		#click-check2:checked + .zoom{
+			transform: scale(1.7);
+			z-index: 100;
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+
+		#click-check2 + .zoom{
+			transform: scale(1);
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+		#click-check3:checked + .zoom{
+			transform: scale(1.7);
+			z-index: 100;
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+
+		#click-check3 + .zoom{
+			transform: scale(1);
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+		#click-check4:checked + .zoom{
+			transform: scale(1.7);
+			z-index: 100;
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+
+		#click-check4 + .zoom{
+			transform: scale(1);
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+		#click-check5:checked + .zoom{
+			transform: scale(1.7);
+			z-index: 100;
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+
+		#click-check5 + .zoom{
+			transform: scale(1);
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+		#click-check6:checked + .zoom{
+			transform: scale(1.7);
+			z-index: 100;
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+
+		#click-check6 + .zoom{
+			transform: scale(1);
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+		#click-check7:checked + .zoom{
+			transform: scale(1.7);
+			z-index: 100;
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+
+		#click-check7 + .zoom{
+			transform: scale(1);
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+		#click-check8:checked + .zoom{
+			transform: scale(1.7);
+			z-index: 100;
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+
+		#click-check8 + .zoom{
+			transform: scale(1);
+			cursor: zoom-out;
+			transition-duration: 1.2s;
+		}
+
+
+		
 
 		@media screen and (max-width: 736px) {
 
